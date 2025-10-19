@@ -36,8 +36,6 @@ terraform --version
 
 ## Inicialização
 
-### Método 1: Terraform (Recomendado)
-
 ```bash
 # Navegar para o diretório terraform
 cd terraform
@@ -48,15 +46,6 @@ terraform init
 # Aplicar configuração
 terraform apply -auto-approve
 ```
-
-### Método 2: Docker Compose (Alternativo)
-
-```bash
-# Na raiz do projeto
-docker-compose up -d
-```
-
-**Nota**: O Docker Compose utiliza `dockerize` para garantir que o backend aguarde o database estar completamente pronto antes de iniciar.
 
 ## Acesso
 
