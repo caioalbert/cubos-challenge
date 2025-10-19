@@ -1,0 +1,37 @@
+{
+  "dashboard": {
+    "title": "Cubos Challenge Monitoring",
+    "panels": [
+      {
+        "title": "HTTP Requests Total",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "http_requests_total",
+            "legendFormat": "Total Requests"
+          }
+        ]
+      },
+      {
+        "title": "Database Connection Status",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "db_connection_status",
+            "legendFormat": "DB Connected"
+          }
+        ]
+      },
+      {
+        "title": "Application Uptime",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "app_uptime_seconds",
+            "legendFormat": "Uptime (seconds)"
+          }
+        ]
+      }
+    ]
+  }
+}
